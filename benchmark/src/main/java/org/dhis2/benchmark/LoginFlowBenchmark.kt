@@ -8,6 +8,7 @@ import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.By
+import androidx.test.uiautomator.Direction
 import androidx.test.uiautomator.Until
 import org.junit.Rule
 import org.junit.Test
@@ -20,6 +21,10 @@ class LoginFlowBenchmark {
     @get:Rule
     val benchmarkRule = MacrobenchmarkRule()
 
+    private val instrumentation by lazy(LazyThreadSafetyMode.NONE) {
+        InstrumentationRegistry.getInstrumentation()
+    }
+
     @Test
     fun login() = benchmarkRule.measureRepeated(
         packageName = "com.dhis2",
@@ -28,7 +33,9 @@ class LoginFlowBenchmark {
         iterations = 11,
         startupMode = StartupMode.COLD,
         setupBlock = {
-            // TODO: Clear app data or logout
+            instrumentation.uiAutomation
+                .executeShellCommand("pm clear $packageName")
+                .close()
         }
     ) {
         pressHome()
