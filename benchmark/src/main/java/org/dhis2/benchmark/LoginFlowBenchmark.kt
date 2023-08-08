@@ -1,7 +1,9 @@
 package org.dhis2.benchmark
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.benchmark.macro.CompilationMode
+import androidx.benchmark.macro.FrameTimingMetric
 import androidx.benchmark.macro.StartupMode
 import androidx.benchmark.macro.StartupTimingMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
@@ -27,7 +29,7 @@ class LoginFlowBenchmark {
     @Test
     fun login() = benchmarkRule.measureRepeated(
         packageName = "com.dhis2",
-        metrics = listOf(StartupTimingMetric()),
+        metrics = listOf(StartupTimingMetric(), FrameTimingMetric()),
         iterations = 11,
         compilationMode = CompilationMode.DEFAULT,
         startupMode = StartupMode.COLD,
