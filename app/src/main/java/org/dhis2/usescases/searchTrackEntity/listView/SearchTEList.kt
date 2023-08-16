@@ -15,6 +15,7 @@ import androidx.compose.ui.platform.ComposeView
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.ViewCompositionStrategy
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.compose.ui.platform.testTag
 import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
@@ -189,8 +190,8 @@ class SearchTEList : FragmentGlobalAbstract() {
 
                     FullSearchButtonAndWorkingList(
                         teTypeName = teTypeName!!,
-                        modifier = Modifier,
                         createButtonVisible = createButtonVisibility,
+                        modifier = Modifier.testTag("search"),
                         closeFilterVisibility = isFilterOpened,
                         isLandscape = isLandscape(),
                         queryData = queryData,

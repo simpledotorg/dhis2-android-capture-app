@@ -37,12 +37,15 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Devices
@@ -55,6 +58,7 @@ import org.dhis2.ui.buttons.Dhis2TextButton
 import org.dhis2.ui.model.ButtonUiModel
 import org.dhis2.ui.theme.defaultFontFamily
 
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun OrgUnitSelectorDialog(
     title: String?,
@@ -64,7 +68,8 @@ fun OrgUnitSelectorDialog(
     Surface(
         modifier = Modifier
             .wrapContentHeight()
-            .fillMaxWidth(),
+            .fillMaxWidth()
+            .semantics { testTagsAsResourceId = true },
         color = Color.White,
         shape = RoundedCornerShape(16.dp),
     ) {

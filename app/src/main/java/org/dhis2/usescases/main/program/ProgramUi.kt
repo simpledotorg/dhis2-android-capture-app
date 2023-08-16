@@ -46,6 +46,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
@@ -60,6 +61,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.semantics.testTag
+import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
@@ -80,6 +82,7 @@ import org.hisp.dhis.mobile.ui.designsystem.component.internal.ImageCardData
 import org.hisp.dhis.mobile.ui.designsystem.theme.Spacing
 import org.hisp.dhis.mobile.ui.designsystem.theme.SurfaceColor
 
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun ProgramList(
     programs: List<ProgramViewModel>?,
@@ -88,7 +91,11 @@ fun ProgramList(
     downLoadState: SyncStatusData?,
 ) {
     val conf = LocalConfiguration.current
-    Column {
+    Column(
+      modifier = Modifier.semantics {
+        testTagsAsResourceId = true
+      }
+    ) {
         AnimatedVisibility(
             visible = downLoadState?.downloadingMedia == true,
             enter = expandIn(
