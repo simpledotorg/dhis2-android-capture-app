@@ -22,8 +22,8 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class LoginFlowBenchmark {
 
-    @get:Rule
-    val benchmarkRule = MacrobenchmarkRule()
+  @get:Rule
+  val benchmarkRule = MacrobenchmarkRule()
 
     private val instrumentation by lazy(LazyThreadSafetyMode.NONE) {
         InstrumentationRegistry.getInstrumentation()
