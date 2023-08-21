@@ -1,5 +1,7 @@
 package org.dhis2.benchmark
 
+import androidx.benchmark.macro.ExperimentalMetricApi
+import androidx.benchmark.macro.TraceSectionMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.dhis2.benchmark.helper.attemptLogin
@@ -16,10 +18,12 @@ class PatientRegistrationBenchmark {
   @get:Rule
   val benchmarkRule = MacrobenchmarkRule()
 
+  @OptIn(ExperimentalMetricApi::class)
   @Test
   fun patientRegistration() {
     var firstStart = true
     benchmarkRule.setRule(
+      metrics = listOf(TraceSectionMetric("Patient Registration")),
       setupBlock = {
         if (firstStart) {
           attemptLogin()

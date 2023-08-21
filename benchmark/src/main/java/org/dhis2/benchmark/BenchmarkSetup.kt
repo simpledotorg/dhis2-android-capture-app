@@ -9,7 +9,7 @@ import androidx.benchmark.macro.StartupTimingMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 
 fun MacrobenchmarkRule.setRule(
-  metrics: List<Metric> = listOf(StartupTimingMetric(), FrameTimingMetric()),
+  metrics: List<Metric> = listOf(StartupTimingMetric()),
   setupBlock: MacrobenchmarkScope.() -> Unit = {},
   measureBlock: MacrobenchmarkScope.() -> Unit = {}
 ) {
