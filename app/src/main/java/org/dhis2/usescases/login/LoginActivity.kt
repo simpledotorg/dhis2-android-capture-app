@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.os.Trace
 import android.text.Editable
 import android.text.TextUtils.isEmpty
 import android.text.TextWatcher
@@ -167,6 +168,8 @@ class LoginActivity : ActivityGlobalAbstract(), LoginContracts.View {
 
     @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
+        Trace.beginAsyncSection("LOGIN_FLOW_", 100)
+
         setTheme(R.style.LoginTheme)
         val loginComponent = app().loginComponent() ?: app().createLoginComponent(
             LoginModule(
@@ -310,6 +313,7 @@ class LoginActivity : ActivityGlobalAbstract(), LoginContracts.View {
     }
 
     override fun goToNextScreen() {
+        Trace.endAsyncSection("LOGIN_FLOW_", 100)
         if (isNetworkAvailable() && !skipSync) {
             startActivity(SyncActivity::class.java, null, true, true, null)
         } else {
