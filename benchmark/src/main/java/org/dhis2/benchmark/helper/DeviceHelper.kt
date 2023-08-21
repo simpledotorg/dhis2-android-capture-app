@@ -7,7 +7,7 @@ private val instrumentation by lazy(LazyThreadSafetyMode.NONE) {
   InstrumentationRegistry.getInstrumentation()
 }
 
-fun uninstallExistingPackage(
+fun clearAppData(
   packageName: String = TARGET_PACKAGE
 ) {
   instrumentation.uiAutomation

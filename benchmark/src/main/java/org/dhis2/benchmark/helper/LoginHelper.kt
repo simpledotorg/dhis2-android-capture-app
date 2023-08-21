@@ -13,7 +13,7 @@ fun MacrobenchmarkScope.attemptLogin(
   userName: String = USERNAME,
   password: String = PASSWORD
 ) {
-  uninstallExistingPackage()
+  clearAppData()
   startLoginScreen()
 
   fillLoginDetails(serverUrl, userName, password)
