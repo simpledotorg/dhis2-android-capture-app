@@ -8,6 +8,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.os.Trace
 import android.provider.Settings
 import android.transition.ChangeBounds
 import android.transition.TransitionManager
@@ -136,6 +137,9 @@ class MainActivity :
 
     //region LIFECYCLE
     override fun onCreate(savedInstanceState: Bundle?) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            Trace.beginAsyncSection("Patient Registration",0)
+        }
         app().userComponent()?.let {
             mainComponent = it.plus(MainModule(this)).apply {
                 inject(this@MainActivity)

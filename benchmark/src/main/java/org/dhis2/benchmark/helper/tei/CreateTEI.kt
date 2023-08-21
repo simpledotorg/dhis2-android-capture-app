@@ -69,10 +69,12 @@ private fun MacrobenchmarkScope.selectAllYesRadioButtons() {
   val radioGroupsWithRes = device.findObjects(By.res(packageName, "yes"))
   radioGroupsWithRes?.forEach { radioGroup ->
     radioGroup.click()
+    radioGroup.wait(Until.checked(true), TimeUnit.SECONDS.toMillis(10))
   }
 
   val radioGroupsWithText = device.findObjects(By.text("Yes"))
   radioGroupsWithText?.forEach { radioGroup ->
     radioGroup.click()
+    radioGroup.wait(Until.checked(true), TimeUnit.SECONDS.toMillis(10))
   }
 }
