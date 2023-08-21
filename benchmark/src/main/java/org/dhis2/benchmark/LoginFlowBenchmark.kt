@@ -9,6 +9,7 @@ import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.By
+import org.dhis2.benchmark.utils.clearData
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -31,9 +32,8 @@ class LoginFlowBenchmark {
         compilationMode = CompilationMode.DEFAULT,
         startupMode = StartupMode.COLD,
         setupBlock = {
-            instrumentation.uiAutomation
-                .executeShellCommand("pm clear $packageName")
-                .close()
+            pressHome()
+            instrumentation.clearData(packageName)
         }
     ) {
         startActivityAndWait(Intent("$packageName.LOGIN_ACTIVITY"))
