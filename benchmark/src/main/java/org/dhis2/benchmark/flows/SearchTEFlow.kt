@@ -1,13 +1,18 @@
-package org.dhis2.benchmark.helper.tei
+package org.dhis2.benchmark.flows
 
 import android.view.KeyEvent
 import androidx.benchmark.macro.MacrobenchmarkScope
 import androidx.test.uiautomator.By
-import org.dhis2.benchmark.helper.clickRes
-import org.dhis2.benchmark.helper.clickText
+import org.dhis2.benchmark.utils.clickByRes
+import org.dhis2.benchmark.utils.clickByText
+
+fun MacrobenchmarkScope.searchTEIAndNavigateToFirstResult() {
+  clickByText("Search")
+  searchPatientByFirstAndLastName()
+}
 
 fun MacrobenchmarkScope.searchTEI() {
-  clickText("Search")
+  clickByText("Search")
   searchPatientByFirstAndLastName()
 }
 
@@ -32,5 +37,5 @@ private fun MacrobenchmarkScope.searchPatientByFirstAndLastName() {
 
   device.pressBack()
 
-  clickRes("searchButton")
+  clickByRes("searchButton")
 }

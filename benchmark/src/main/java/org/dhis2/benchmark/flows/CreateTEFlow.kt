@@ -1,4 +1,4 @@
-package org.dhis2.benchmark.helper.tei
+package org.dhis2.benchmark.flows
 
 import android.view.KeyEvent
 import androidx.benchmark.macro.MacrobenchmarkScope
@@ -6,24 +6,24 @@ import androidx.test.uiautomator.By
 import androidx.test.uiautomator.UiScrollable
 import androidx.test.uiautomator.UiSelector
 import androidx.test.uiautomator.Until
-import org.dhis2.benchmark.helper.clickRes
-import org.dhis2.benchmark.helper.clickTag
-import org.dhis2.benchmark.helper.clickText
+import org.dhis2.benchmark.utils.clickByRes
+import org.dhis2.benchmark.utils.clickByTag
+import org.dhis2.benchmark.utils.clickByText
 import java.util.concurrent.TimeUnit
 
 fun MacrobenchmarkScope.createTEI() {
-  clickRes("createButton")
+  clickByRes("createButton")
   selectOrgUnit()
-  clickRes("acceptBtn")
+  clickByRes("acceptBtn")
   fillPatientEnrollmentDetails()
-  clickRes("save")
-  clickRes("action_button")
+  clickByRes("save")
+  clickByRes("action_button")
 }
 
 private fun MacrobenchmarkScope.selectOrgUnit() {
   //TODO: Need to allow constructor based org
 
-  clickTag("ORG_UNIT_DIALOG_SEARCH")
+  clickByTag("ORG_UNIT_DIALOG_SEARCH")
 
   device.pressKeyCode(KeyEvent.KEYCODE_M)
   device.pressKeyCode(KeyEvent.KEYCODE_A)
@@ -36,14 +36,14 @@ private fun MacrobenchmarkScope.selectOrgUnit() {
   device.pressKeyCode(KeyEvent.KEYCODE_R)
   device.pressBack()
 
-  clickTag("ORG_UNIT_DIALOG_ITEM_CHECK_Madhabpur SC")
-  clickTag("ORG_UNIT_DIALOG_DONE")
+  clickByTag("ORG_UNIT_DIALOG_ITEM_CHECK_Madhabpur SC")
+  clickByTag("ORG_UNIT_DIALOG_DONE")
 }
 
 private fun MacrobenchmarkScope.fillPatientEnrollmentDetails() {
-  clickRes("sectionButton")
+  clickByRes("sectionButton")
   fillDOB()
-  clickText("Male")
+  clickByText("Male")
   scrollToEnd()
   selectAllYesRadioButtons()
 }
@@ -51,13 +51,13 @@ private fun MacrobenchmarkScope.fillPatientEnrollmentDetails() {
 private fun MacrobenchmarkScope.fillDOB() {
   //TODO: Need to allow constructor based dob
 
-  clickRes("input_year")
-  clickRes("input_year")
+  clickByRes("input_year")
+  clickByRes("input_year")
 
   device.pressKeyCode(KeyEvent.KEYCODE_3)
   device.pressKeyCode(KeyEvent.KEYCODE_6)
 
-  clickText("Accept")
+  clickByText("Accept")
 }
 
 private fun scrollToEnd(maxSwipes: Int = 3) {
