@@ -9,6 +9,8 @@ import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.By
+import androidx.test.uiautomator.Until
+import org.dhis2.benchmark.flows.loginIntoApp
 import org.dhis2.benchmark.utils.clearData
 import org.junit.Rule
 import org.junit.Test
@@ -37,12 +39,8 @@ class LoginFlowBenchmark {
         }
     ) {
         startActivityAndWait(Intent("$packageName.LOGIN_ACTIVITY"))
+        loginIntoApp()
 
-        device.findObject(By.res(packageName, "server_url_edit")).text = "https://play.dhis2.org/40"
-        device.findObject(By.res(packageName, "user_name_edit")).text = "android"
-        device.findObject(By.res(packageName, "user_pass_edit")).text = "Android123"
-        device.findObject(By.res(packageName, "login")).click()
-
-        device.waitForIdle()
+        device.wait(Until.hasObject(By.res(packageName, "sync_layout")), 5000)
     }
 }
