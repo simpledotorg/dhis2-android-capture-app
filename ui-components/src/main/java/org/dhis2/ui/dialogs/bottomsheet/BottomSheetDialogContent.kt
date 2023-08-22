@@ -29,11 +29,14 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.testTagsAsResourceId
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.capitalize
@@ -52,6 +55,7 @@ import org.dhis2.ui.theme.textPrimary
 import org.dhis2.ui.theme.textSecondary
 import org.dhis2.ui.theme.textSubtitle
 
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun BottomSheetDialogUi(
     bottomSheetDialogUiModel: BottomSheetDialogUiModel,
@@ -66,6 +70,7 @@ fun BottomSheetDialogUi(
         modifier = Modifier
             .background(color = Color.White, shape = RoundedCornerShape(28.dp, 28.dp))
             .padding(24.dp)
+            .semantics { testTagsAsResourceId = true }
             .fillMaxWidth(),
         verticalArrangement = spacedBy(24.dp),
     ) {
@@ -224,6 +229,7 @@ fun IssueItem(fieldWithIssue: FieldWithIssue, onClick: () -> Unit) {
                     IssueType.ERROR_ON_COMPLETE,
                     IssueType.MANDATORY,
                     -> R.drawable.ic_error_outline
+
                     else -> R.drawable.ic_warning_alert
                 },
             ),
@@ -316,7 +322,7 @@ fun DialogPreview4() {
         bottomSheetDialogUiModel = BottomSheetDialogUiModel(
             title = "Not saved",
             message = "Some fields have errors and they are not saved." +
-                "If you exit now the changes will be discarded.",
+                    "If you exit now the changes will be discarded.",
             iconResource = R.drawable.ic_error_outline,
             mainButton = DialogButtonStyle.MainButton(R.string.review),
             secondaryButton = DialogButtonStyle.DiscardButton(),

@@ -13,6 +13,7 @@ import java.util.concurrent.TimeUnit
 
 fun MacrobenchmarkScope.createTEI() {
   clickByRes("createButton")
+  device.waitForIdle()
   selectOrgUnit()
   clickByRes("acceptBtn")
   fillPatientEnrollmentDetails()

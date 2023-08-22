@@ -17,7 +17,7 @@ fun MacrobenchmarkRule.measureRepeated(
     packageName = TARGET_PACKAGE,
     metrics = metrics,
     compilationMode = CompilationMode.DEFAULT,
-    startupMode = StartupMode.HOT,
+    startupMode = StartupMode.COLD,
     iterations = DEFAULT_ITERATIONS,
     setupBlock = setupBlock,
   ) {

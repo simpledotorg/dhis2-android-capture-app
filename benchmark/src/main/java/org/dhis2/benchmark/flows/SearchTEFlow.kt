@@ -13,6 +13,7 @@ fun MacrobenchmarkScope.searchTEIAndNavigateToFirstResult() {
 
 fun MacrobenchmarkScope.searchTEI() {
   clickByText("Search")
+  device.waitForIdle()
   searchPatientByFirstAndLastName()
 }
 

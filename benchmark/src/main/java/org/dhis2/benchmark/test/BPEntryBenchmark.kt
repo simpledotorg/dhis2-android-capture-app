@@ -7,7 +7,8 @@ import androidx.benchmark.macro.TraceSectionMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.uiautomator.By
-import androidx.test.uiautomator.Until
+import androidx.test.uiautomator.UiScrollable
+import androidx.test.uiautomator.UiSelector
 import org.dhis2.benchmark.HTN_PROGRAM
 import org.dhis2.benchmark.flows.attemptLogin
 import org.dhis2.benchmark.flows.createTEI
@@ -22,8 +23,6 @@ import org.dhis2.benchmark.utils.waitForText
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import java.util.concurrent.TimeUnit
-
 
 @RunWith(AndroidJUnit4::class)
 class BPEntryBenchmark {
@@ -35,12 +34,15 @@ class BPEntryBenchmark {
   @Test
   fun addNewBloodPressure() {
     var firstStart = true
+
     benchmarkRule.measureRepeated(
       metrics = listOf(TraceSectionMetric("BP_ENTRY_FLOW_")),
       setupBlock = {
         pressHome()
         startActivityAndWait()
+
         if (firstStart) {
+          waitForRes("credentialLayout", 30)
           attemptLogin()
           optForAnalytics()
           waitForText("Home", 60)
@@ -54,6 +56,7 @@ class BPEntryBenchmark {
       },
       measureBlock = {
         clickByText(HTN_PROGRAM)
+        device.waitForIdle()
         searchTEI()
         device.waitForIdle()
         clickByText("rajesh")
@@ -61,12 +64,6 @@ class BPEntryBenchmark {
 
         addHypertensionRecords()
         markFormAsComplete()
-
-        device.wait(
-          Until.hasObject(By.clazz("$packageName.TeiDashboardMobileActivity")),
-          TimeUnit.SECONDS.toMillis(10)
-        )
-
         generateNewEvent(generate = false)
       }
     )
@@ -93,8 +90,12 @@ class BPEntryBenchmark {
     device.pressKeyCode(KeyEvent.KEYCODE_4)
     device.pressBack()
 
-    elements[2].click()
+    val dropDownElement = device.findObjects(By.res(packageName, "inputEditText"))
+    dropDownElement[0].click()
     clickByText("Amlodipine(5mg)")
+
+    val scrollableView = UiScrollable(UiSelector().scrollable(true))
+    scrollableView.scrollToEnd(1)
 
     device.waitForIdle()
     clickByRes("actionButton")
