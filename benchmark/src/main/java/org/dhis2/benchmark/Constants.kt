@@ -1,7 +1,7 @@
 package org.dhis2.benchmark
 
 const val TARGET_PACKAGE = "com.dhis2"
-const val DEFAULT_ITERATIONS = 10
+const val DEFAULT_ITERATIONS = 11
 
 //Login
 const val SERVER_URL = "https://dhis2-sandbox2.simple.org"
