@@ -51,7 +51,7 @@ fun MacrobenchmarkScope.clickByTag(tag: String) {
 
 fun MacrobenchmarkScope.waitForText(
   text: String,
-  timeoutSeconds: Long = 10
+  timeoutSeconds: Long = 10,
 ) {
   if (!device.wait(
       Until.hasObject(By.text(text)),
@@ -62,15 +62,15 @@ fun MacrobenchmarkScope.waitForText(
   }
 }
 
-fun MacrobenchmarkScope.waitForClass(
-  className: String,
-  timeoutSeconds: Long = 10
+fun MacrobenchmarkScope.waitForRes(
+  resource: String,
+  timeoutSeconds: Long = 10,
 ) {
   if (!device.wait(
-      Until.hasObject(By.clazz(className)),
+      Until.hasObject(By.res(packageName, resource)),
       TimeUnit.SECONDS.toMillis(timeoutSeconds)
     )
   ) {
-    TestCase.fail("Could not find: $className")
+    TestCase.fail("Could not find: $resource")
   }
 }

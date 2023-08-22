@@ -15,7 +15,6 @@ import org.dhis2.benchmark.flows.searchTEI
 import org.dhis2.benchmark.utils.clearData
 import org.dhis2.benchmark.utils.clickByText
 import org.dhis2.benchmark.utils.measureRepeated
-import org.dhis2.benchmark.utils.waitForClass
 import org.dhis2.benchmark.utils.waitForText
 import org.junit.Rule
 import org.junit.Test

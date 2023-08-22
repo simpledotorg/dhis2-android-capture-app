@@ -7,6 +7,7 @@ import org.dhis2.benchmark.PASSWORD
 import org.dhis2.benchmark.SERVER_URL
 import org.dhis2.benchmark.USERNAME
 import org.dhis2.benchmark.utils.clickByText
+import org.dhis2.benchmark.utils.waitForRes
 import org.dhis2.benchmark.utils.waitForText
 import java.util.concurrent.TimeUnit
 
@@ -15,6 +16,7 @@ fun MacrobenchmarkScope.attemptLogin(
   userName: String = USERNAME,
   password: String = PASSWORD
 ) {
+  waitForRes("server_url_edit")
   device.findObject(By.res(packageName, "server_url_edit")).text = serverUrl
   device.findObject(By.res(packageName, "user_name_edit")).text = userName
   device.findObject(By.res(packageName, "user_pass_edit")).text = password
