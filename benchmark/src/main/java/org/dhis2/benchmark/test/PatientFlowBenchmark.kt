@@ -13,13 +13,14 @@ import org.dhis2.benchmark.flows.optForAnalytics
 import org.dhis2.benchmark.flows.createTEI
 import org.dhis2.benchmark.flows.searchTEI
 import org.dhis2.benchmark.utils.clearData
+import org.dhis2.benchmark.utils.clickByRes
 import org.dhis2.benchmark.utils.clickByText
 import org.dhis2.benchmark.utils.measureRepeated
+import org.dhis2.benchmark.utils.waitForRes
 import org.dhis2.benchmark.utils.waitForText
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
-import java.util.concurrent.TimeUnit
 
 @RunWith(AndroidJUnit4::class)
 class PatientFlowBenchmark {
@@ -27,32 +28,66 @@ class PatientFlowBenchmark {
   @get:Rule
   val benchmarkRule = MacrobenchmarkRule()
 
-  private val instrumentation by lazy(LazyThreadSafetyMode.NONE) {
-    InstrumentationRegistry.getInstrumentation()
+  @OptIn(ExperimentalMetricApi::class)
+  @Test
+  fun patientRegistration() {
+    var firstStart = true
+    benchmarkRule.measureRepeated(
+      metrics = listOf(TraceSectionMetric("PATIENT_REGISTRATION_FLOW_")),
+      setupBlock = {
+        pressHome()
+        startActivityAndWait()
+
+        if (firstStart) {
+          waitForRes("credentialLayout", 30)
+          attemptLogin()
+          optForAnalytics()
+          waitForText("Home", 60)
+          firstStart = false
+        }
+      },
+      measureBlock = {
+        clickByText(HTN_PROGRAM)
+        device.waitForIdle()
+        searchTEI()
+        device.waitForIdle()
+        createTEI()
+        waitForRes("tei_pager", 30)
+      }
+    )
   }
 
   @OptIn(ExperimentalMetricApi::class)
   @Test
-  fun patientRegistration() {
+  fun patientSearch() {
+    var firstStart = true
     benchmarkRule.measureRepeated(
-      metrics = listOf(TraceSectionMetric("PATIENT_REGISTRATION_FLOW_")),
+      metrics = listOf(TraceSectionMetric("PATIENT_SEARCH_FLOW_")),
       setupBlock = {
-        instrumentation.clearData(packageName)
         pressHome()
         startActivityAndWait()
 
-        device
-          .wait(Until.hasObject(By.res(packageName, "credentialLayout")), TimeUnit.SECONDS.toMillis(30))
-
-        attemptLogin()
-        optForAnalytics()
-        waitForText("Home", 60)
+        if (firstStart) {
+          waitForRes("credentialLayout", 30)
+          attemptLogin()
+          optForAnalytics()
+          waitForText("Home", 60)
+          clickByText(HTN_PROGRAM)
+          searchTEI()
+          createTEI()
+          clickByRes("back")
+          clickByRes("back_button")
+          firstStart = false
+        }
       },
       measureBlock = {
         clickByText(HTN_PROGRAM)
+        device.waitForIdle()
         searchTEI()
-        createTEI()
-        device.wait(Until.hasObject(By.res(packageName, "tei_pager")), TimeUnit.SECONDS.toMillis(30))
+        device.waitForIdle()
+        clickByText("rajesh")
+        device.waitForIdle()
+        waitForRes("tei_pager", 30)
       }
     )
   }
