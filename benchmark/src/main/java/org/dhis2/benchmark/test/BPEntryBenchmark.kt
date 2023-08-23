@@ -10,7 +10,7 @@ import androidx.test.uiautomator.By
 import androidx.test.uiautomator.UiScrollable
 import androidx.test.uiautomator.UiSelector
 import org.dhis2.benchmark.HTN_PROGRAM
-import org.dhis2.benchmark.flows.attemptLogin
+import org.dhis2.benchmark.flows.login
 import org.dhis2.benchmark.flows.createTEI
 import org.dhis2.benchmark.flows.optForAnalytics
 import org.dhis2.benchmark.flows.searchTEI
@@ -43,7 +43,7 @@ class BPEntryBenchmark {
 
         if (firstStart) {
           waitForRes("credentialLayout", 30)
-          attemptLogin()
+          login()
           optForAnalytics()
           waitForText("Home", 60)
           clickByText(HTN_PROGRAM)

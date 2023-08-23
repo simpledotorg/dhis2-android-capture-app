@@ -8,7 +8,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.By
 import androidx.test.uiautomator.Until
-import org.dhis2.benchmark.flows.attemptLogin
+import org.dhis2.benchmark.flows.login
 import org.dhis2.benchmark.flows.optForAnalytics
 import org.dhis2.benchmark.utils.clearData
 import org.dhis2.benchmark.utils.measureRepeated
@@ -36,7 +36,7 @@ class LoginFlowBenchmark {
     }
   ) {
     startActivityAndWait(Intent("$packageName.LOGIN_ACTIVITY"))
-    attemptLogin()
+    login()
     optForAnalytics()
     device.wait(Until.hasObject(By.res(packageName, "sync_layout")), 5000)
   }

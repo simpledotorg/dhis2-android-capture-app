@@ -4,15 +4,11 @@ import androidx.benchmark.macro.ExperimentalMetricApi
 import androidx.benchmark.macro.TraceSectionMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.platform.app.InstrumentationRegistry
-import androidx.test.uiautomator.By
-import androidx.test.uiautomator.Until
 import org.dhis2.benchmark.HTN_PROGRAM
-import org.dhis2.benchmark.flows.attemptLogin
+import org.dhis2.benchmark.flows.login
 import org.dhis2.benchmark.flows.optForAnalytics
 import org.dhis2.benchmark.flows.createTEI
 import org.dhis2.benchmark.flows.searchTEI
-import org.dhis2.benchmark.utils.clearData
 import org.dhis2.benchmark.utils.clickByRes
 import org.dhis2.benchmark.utils.clickByText
 import org.dhis2.benchmark.utils.measureRepeated
@@ -40,7 +36,7 @@ class PatientFlowBenchmark {
 
         if (firstStart) {
           waitForRes("credentialLayout", 30)
-          attemptLogin()
+          login()
           optForAnalytics()
           waitForText("Home", 60)
           firstStart = false
@@ -69,7 +65,7 @@ class PatientFlowBenchmark {
 
         if (firstStart) {
           waitForRes("credentialLayout", 30)
-          attemptLogin()
+          login()
           optForAnalytics()
           waitForText("Home", 60)
           clickByText(HTN_PROGRAM)

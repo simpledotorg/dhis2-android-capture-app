@@ -1,27 +1,22 @@
 package org.dhis2.benchmark.flows
 
 import androidx.benchmark.macro.MacrobenchmarkScope
-import androidx.test.uiautomator.By
-import androidx.test.uiautomator.Until
-import org.dhis2.benchmark.PASSWORD
-import org.dhis2.benchmark.SERVER_URL
-import org.dhis2.benchmark.USERNAME
+import org.dhis2.benchmark.utils.clickByRes
 import org.dhis2.benchmark.utils.clickByText
+import org.dhis2.benchmark.utils.setTextByRes
 import org.dhis2.benchmark.utils.waitForRes
 import org.dhis2.benchmark.utils.waitForText
-import java.util.concurrent.TimeUnit
 
-fun MacrobenchmarkScope.attemptLogin(
-  serverUrl: String = SERVER_URL,
-  userName: String = USERNAME,
-  password: String = PASSWORD
-) {
-  waitForRes("server_url_edit")
-  device.findObject(By.res(packageName, "server_url_edit")).text = serverUrl
-  device.findObject(By.res(packageName, "user_name_edit")).text = userName
-  device.findObject(By.res(packageName, "user_pass_edit")).text = password
+private const val SERVER_URL = "https://dhis2-sandbox2.simple.org"
+private const val USERNAME = "admin"
+private const val PASSWORD = "district"
 
-  device.findObject(By.res(packageName, "login")).click()
+fun MacrobenchmarkScope.login() {
+  waitForRes("credentialLayout")
+  setTextByRes("server_url_edit", SERVER_URL)
+  setTextByRes("user_name_edit", USERNAME)
+  setTextByRes("user_pass_edit", PASSWORD)
+  clickByRes("login")
 }
 
 fun MacrobenchmarkScope.optForAnalytics() {
