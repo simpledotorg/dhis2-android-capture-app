@@ -9,9 +9,9 @@ import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.By
 import androidx.test.uiautomator.Until
 import org.dhis2.benchmark.flows.login
-import org.dhis2.benchmark.flows.optForAnalytics
 import org.dhis2.benchmark.utils.clearData
 import org.dhis2.benchmark.utils.measureRepeated
+import org.dhis2.benchmark.utils.waitForRes
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -37,7 +37,6 @@ class LoginFlowBenchmark {
   ) {
     startActivityAndWait(Intent("$packageName.LOGIN_ACTIVITY"))
     login()
-    optForAnalytics()
-    device.wait(Until.hasObject(By.res(packageName, "sync_layout")), 5000)
+    waitForRes("sync_layout")
   }
 }

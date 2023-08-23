@@ -6,7 +6,6 @@ import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.dhis2.benchmark.HTN_PROGRAM
 import org.dhis2.benchmark.flows.login
-import org.dhis2.benchmark.flows.optForAnalytics
 import org.dhis2.benchmark.flows.createTEI
 import org.dhis2.benchmark.flows.searchTEI
 import org.dhis2.benchmark.utils.clickByRes
@@ -35,9 +34,7 @@ class PatientFlowBenchmark {
         startActivityAndWait()
 
         if (firstStart) {
-          waitForRes("credentialLayout", 30)
           login()
-          optForAnalytics()
           waitForText("Home", 60)
           firstStart = false
         }
@@ -66,7 +63,6 @@ class PatientFlowBenchmark {
         if (firstStart) {
           waitForRes("credentialLayout", 30)
           login()
-          optForAnalytics()
           waitForText("Home", 60)
           clickByText(HTN_PROGRAM)
           searchTEI()

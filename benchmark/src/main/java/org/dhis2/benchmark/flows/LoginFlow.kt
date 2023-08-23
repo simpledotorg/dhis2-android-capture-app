@@ -17,9 +17,10 @@ fun MacrobenchmarkScope.login() {
   setTextByRes("user_name_edit", USERNAME)
   setTextByRes("user_pass_edit", PASSWORD)
   clickByRes("login")
+  optForAnalytics()
 }
 
-fun MacrobenchmarkScope.optForAnalytics() {
+private fun MacrobenchmarkScope.optForAnalytics() {
   waitForText("Do you want to help us improve this app?", 60)
   clickByText("Yes")
 }
