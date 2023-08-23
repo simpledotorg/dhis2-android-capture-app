@@ -66,6 +66,18 @@ fun MacrobenchmarkScope.clickByTag(tag: String) {
     }
 }
 
+fun MacrobenchmarkScope.setTextByRes(res: String, text: String) {
+    if (!device.wait(
+            Until.hasObject(By.res(packageName, res)),
+            TimeUnit.SECONDS.toMillis(60)
+        )
+    ) {
+        TestCase.fail("Could not find: $res")
+    } else {
+        device.findObject(By.res(packageName, res)).text = text
+    }
+}
+
 fun MacrobenchmarkScope.waitForText(
     text: String,
     timeoutSeconds: Long = 10,
