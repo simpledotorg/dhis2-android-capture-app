@@ -6,9 +6,15 @@ import androidx.benchmark.macro.Metric
 import androidx.benchmark.macro.StartupMode
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.uiautomator.By
+import androidx.test.uiautomator.BySelector
+import androidx.test.uiautomator.SearchCondition
+import androidx.test.uiautomator.UiDevice
+import androidx.test.uiautomator.UiObject2
 import androidx.test.uiautomator.Until
 import junit.framework.TestCase
 import java.util.concurrent.TimeUnit
+import kotlin.time.Duration
+import kotlin.time.Duration.Companion.seconds
 
 private const val TARGET_PACKAGE = "com.dhis2"
 private const val DEFAULT_ITERATIONS = 11
@@ -30,89 +36,13 @@ fun MacrobenchmarkRule.measureRepeated(
     )
 }
 
-fun MacrobenchmarkScope.clickByText(text: String) {
-    if (!device.wait(
-            Until.hasObject(By.text(text)),
-            TimeUnit.SECONDS.toMillis(60)
-        )
-    ) {
-        TestCase.fail("Could not find: $text")
-    } else {
-        device.findObject(By.text(text)).click()
+fun UiDevice.waitForObject(selector: BySelector, timeout: Duration = 10.seconds): UiObject2 {
+    if (wait(Until.hasObject(selector), timeout)) {
+        return findObject(selector)
     }
+    error("Object with selector [$selector] not found")
 }
 
-fun MacrobenchmarkScope.clickByRes(res: String) {
-    if (!device.wait(
-            Until.hasObject(By.res(packageName, res)),
-            TimeUnit.SECONDS.toMillis(60)
-        )
-    ) {
-        TestCase.fail("Could not find: $res")
-    } else {
-        device.findObject(By.res(packageName, res)).click()
-    }
-}
-
-fun MacrobenchmarkScope.clickByTag(tag: String) {
-    if (!device.wait(
-            Until.hasObject(By.res(tag)),
-            TimeUnit.SECONDS.toMillis(60)
-        )
-    ) {
-        TestCase.fail("Could not find: $tag")
-    } else {
-        device.findObject(By.res(tag)).click()
-    }
-}
-
-fun MacrobenchmarkScope.setTextByRes(res: String, text: String) {
-    if (!device.wait(
-            Until.hasObject(By.res(packageName, res)),
-            TimeUnit.SECONDS.toMillis(60)
-        )
-    ) {
-        TestCase.fail("Could not find: $res")
-    } else {
-        device.findObject(By.res(packageName, res)).text = text
-    }
-}
-
-fun MacrobenchmarkScope.waitForText(
-    text: String,
-    timeoutSeconds: Long = 10,
-) {
-    if (!device.wait(
-            Until.hasObject(By.text(text)),
-            TimeUnit.SECONDS.toMillis(timeoutSeconds)
-        )
-    ) {
-        TestCase.fail("Could not find: $text")
-    }
-}
-
-fun MacrobenchmarkScope.waitForRes(
-    resource: String,
-    timeoutSeconds: Long = 10,
-) {
-    if (!device.wait(
-            Until.hasObject(By.res(packageName, resource)),
-            TimeUnit.SECONDS.toMillis(timeoutSeconds)
-        )
-    ) {
-        TestCase.fail("Could not find: $resource")
-    }
-}
-
-fun MacrobenchmarkScope.waitForTag(
-    tag: String,
-    timeoutSeconds: Long = 10
-) {
-    if (!device.wait(
-            Until.hasObject(By.res(tag)),
-            TimeUnit.SECONDS.toMillis(timeoutSeconds)
-        )
-    ) {
-        TestCase.fail("Could not find: $tag")
-    }
+fun <R> UiDevice.wait(condition: SearchCondition<R>, timeout: Duration): R {
+    return wait(condition, timeout.inWholeMilliseconds)
 }

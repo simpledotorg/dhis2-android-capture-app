@@ -3,24 +3,16 @@ package org.dhis2.benchmark.flows
 import android.view.KeyEvent
 import androidx.benchmark.macro.MacrobenchmarkScope
 import androidx.test.uiautomator.By
-import org.dhis2.benchmark.utils.clickByRes
-import org.dhis2.benchmark.utils.clickByText
-
-fun MacrobenchmarkScope.searchTEIAndNavigateToFirstResult() {
-  clickByText("Search")
-  searchPatientByFirstAndLastName()
-}
+import org.dhis2.benchmark.utils.waitForObject
 
 fun MacrobenchmarkScope.searchTEI() {
-  clickByText("Search")
-  device.waitForIdle()
+  device.waitForObject(By.text("Search")).click()
   searchPatientByFirstAndLastName()
 }
 
 private fun MacrobenchmarkScope.searchPatientByFirstAndLastName() {
-  //TODO: elements[0].text = "RAJESH" is not working
-
   val elements = device.findObjects(By.res(packageName, "input_editText"))
+
   elements[0].click()
   device.pressKeyCode(KeyEvent.KEYCODE_R)
   device.pressKeyCode(KeyEvent.KEYCODE_A)
@@ -38,5 +30,5 @@ private fun MacrobenchmarkScope.searchPatientByFirstAndLastName() {
 
   device.pressBack()
 
-  clickByRes("searchButton")
+  device.waitForObject(By.res(packageName, "searchButton")).click()
 }

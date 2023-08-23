@@ -4,18 +4,19 @@ import androidx.benchmark.macro.ExperimentalMetricApi
 import androidx.benchmark.macro.TraceSectionMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.uiautomator.By
+import androidx.test.uiautomator.Until
 import org.dhis2.benchmark.HTN_PROGRAM
-import org.dhis2.benchmark.flows.login
 import org.dhis2.benchmark.flows.createTEI
+import org.dhis2.benchmark.flows.login
 import org.dhis2.benchmark.flows.searchTEI
-import org.dhis2.benchmark.utils.clickByRes
-import org.dhis2.benchmark.utils.clickByText
 import org.dhis2.benchmark.utils.measureRepeated
-import org.dhis2.benchmark.utils.waitForRes
-import org.dhis2.benchmark.utils.waitForText
+import org.dhis2.benchmark.utils.wait
+import org.dhis2.benchmark.utils.waitForObject
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import kotlin.time.Duration.Companion.seconds
 
 @RunWith(AndroidJUnit4::class)
 class PatientFlowBenchmark {
@@ -35,17 +36,18 @@ class PatientFlowBenchmark {
 
         if (firstStart) {
           login()
-          waitForText("Home", 60)
+          device.wait(Until.gone(By.res( "DOWNLOADING_PROGRAM")), 60.seconds)
           firstStart = false
         }
       },
       measureBlock = {
-        clickByText(HTN_PROGRAM)
-        device.waitForIdle()
+        device.waitForObject(By.text(HTN_PROGRAM)).click()
+
         searchTEI()
-        device.waitForIdle()
         createTEI()
-        waitForRes("tei_pager", 30)
+
+        device.waitForObject(By.res(packageName, "tei_pager"))
+        device.waitForIdle()
       }
     )
   }
@@ -61,25 +63,27 @@ class PatientFlowBenchmark {
         startActivityAndWait()
 
         if (firstStart) {
-          waitForRes("credentialLayout", 30)
           login()
-          waitForText("Home", 60)
-          clickByText(HTN_PROGRAM)
+
+          device.waitForObject(By.text(HTN_PROGRAM)).click()
+
           searchTEI()
           createTEI()
-          clickByRes("back")
-          clickByRes("back_button")
+
+          device.waitForObject(By.res(packageName, "back")).click()
+          device.waitForObject(By.res(packageName, "back_button")).click()
+
           firstStart = false
         }
       },
       measureBlock = {
-        clickByText(HTN_PROGRAM)
-        device.waitForIdle()
+        device.waitForObject(By.text(HTN_PROGRAM)).click()
+
         searchTEI()
+
+        device.waitForObject(By.text("rajesh")).click()
+        device.waitForObject(By.res(packageName, "tei_pager"))
         device.waitForIdle()
-        clickByText("rajesh")
-        device.waitForIdle()
-        waitForRes("tei_pager", 30)
       }
     )
   }

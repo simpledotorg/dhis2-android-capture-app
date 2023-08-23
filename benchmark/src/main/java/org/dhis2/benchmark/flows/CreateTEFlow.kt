@@ -6,25 +6,20 @@ import androidx.test.uiautomator.By
 import androidx.test.uiautomator.UiScrollable
 import androidx.test.uiautomator.UiSelector
 import androidx.test.uiautomator.Until
-import org.dhis2.benchmark.utils.clickByRes
-import org.dhis2.benchmark.utils.clickByTag
-import org.dhis2.benchmark.utils.clickByText
+import org.dhis2.benchmark.utils.waitForObject
 import java.util.concurrent.TimeUnit
 
 fun MacrobenchmarkScope.createTEI() {
-  clickByRes("createButton")
-  device.waitForIdle()
+  device.waitForObject(By.res(packageName, "createButton")).click()
   selectOrgUnit()
-  clickByRes("acceptBtn")
+  device.waitForObject(By.res(packageName, "acceptBtn")).click()
   fillPatientEnrollmentDetails()
-  clickByRes("save")
-  clickByRes("action_button")
+  device.waitForObject(By.res(packageName, "save")).click()
+  device.waitForObject(By.res(packageName, "action_button")).click()
 }
 
 private fun MacrobenchmarkScope.selectOrgUnit() {
-  //TODO: Need to allow constructor based org
-
-  clickByTag("ORG_UNIT_DIALOG_SEARCH")
+  device.waitForObject(By.res("ORG_UNIT_DIALOG_SEARCH")).click()
 
   device.pressKeyCode(KeyEvent.KEYCODE_M)
   device.pressKeyCode(KeyEvent.KEYCODE_A)
@@ -37,28 +32,32 @@ private fun MacrobenchmarkScope.selectOrgUnit() {
   device.pressKeyCode(KeyEvent.KEYCODE_R)
   device.pressBack()
 
-  clickByTag("ORG_UNIT_DIALOG_ITEM_CHECK_Madhabpur SC")
-  clickByTag("ORG_UNIT_DIALOG_DONE")
+  device.waitForObject(By.res("ORG_UNIT_DIALOG_ITEM_CHECK_Madhabpur SC")).click()
+  device.waitForObject(By.res("ORG_UNIT_DIALOG_DONE")).click()
 }
 
 private fun MacrobenchmarkScope.fillPatientEnrollmentDetails() {
-  clickByRes("sectionButton")
+  device.waitForObject(By.res(packageName, "sectionButton")).click()
   fillDOB()
-  clickByText("Male")
+  device.waitForObject(By.text("Male")).click()
   scrollToEnd()
   selectAllYesRadioButtons()
+  selectPatientStatus()
+}
+
+fun MacrobenchmarkScope.selectPatientStatus() {
+  device.waitForObject(By.res(packageName, "inputEditText")).click()
+  device.waitForObject(By.text("Active")).click()
 }
 
 private fun MacrobenchmarkScope.fillDOB() {
-  //TODO: Need to allow constructor based dob
-
-  clickByRes("input_year")
-  clickByRes("input_year")
+  device.waitForObject(By.res(packageName, "input_year")).click()
+  device.waitForObject(By.res(packageName, "input_year")).click()
 
   device.pressKeyCode(KeyEvent.KEYCODE_3)
   device.pressKeyCode(KeyEvent.KEYCODE_6)
 
-  clickByText("Accept")
+  device.waitForObject(By.text("Accept")).click()
 }
 
 private fun scrollToEnd(maxSwipes: Int = 3) {

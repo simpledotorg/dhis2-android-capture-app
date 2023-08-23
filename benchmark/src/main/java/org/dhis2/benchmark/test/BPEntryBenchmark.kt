@@ -7,18 +7,12 @@ import androidx.benchmark.macro.TraceSectionMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.uiautomator.By
-import androidx.test.uiautomator.UiScrollable
-import androidx.test.uiautomator.UiSelector
 import org.dhis2.benchmark.HTN_PROGRAM
 import org.dhis2.benchmark.flows.login
 import org.dhis2.benchmark.flows.createTEI
 import org.dhis2.benchmark.flows.searchTEI
-import org.dhis2.benchmark.utils.clickByRes
-import org.dhis2.benchmark.utils.clickByTag
-import org.dhis2.benchmark.utils.clickByText
 import org.dhis2.benchmark.utils.measureRepeated
-import org.dhis2.benchmark.utils.waitForRes
-import org.dhis2.benchmark.utils.waitForText
+import org.dhis2.benchmark.utils.waitForObject
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -41,40 +35,47 @@ class BPEntryBenchmark {
         startActivityAndWait()
 
         if (firstStart) {
-          waitForRes("credentialLayout", 30)
           login()
-          waitForText("Home", 60)
-          clickByText(HTN_PROGRAM)
+
+          device.waitForObject(By.text(HTN_PROGRAM)).click()
+
           searchTEI()
           createTEI()
-          clickByRes("back")
-          clickByRes("back_button")
+
+          device.waitForObject(By.res(packageName, "back")).click()
+          device.waitForObject(By.res(packageName, "back_button")).click()
+
           firstStart = false
         }
       },
       measureBlock = {
-        clickByText(HTN_PROGRAM)
-        device.waitForIdle()
-        searchTEI()
-        device.waitForIdle()
-        clickByText("rajesh")
-        device.waitForIdle()
+        device.waitForObject(By.text(HTN_PROGRAM)).click()
 
-        addHypertensionRecords()
-        markFormAsComplete()
-        generateNewEvent(generate = false)
+        searchTEI()
+
+        device.waitForObject(By.text("rajesh")).click()
+
+        addHypertensionRecord()
+        markFormAsCompleted()
+
+        // Skip creating another new entry
+        device.waitForObject(By.res(packageName, "negative")).click()
+        device.waitForIdle()
       }
     )
   }
 
-  private fun MacrobenchmarkScope.addHypertensionRecords() {
-    clickByRes("addStageButton")
-    device.waitForIdle()
+  private fun MacrobenchmarkScope.markFormAsCompleted() {
+    device.waitForObject(By.text("Saved!"))
+    device.waitForObject(By.res("MAIN_BUTTON_TAG")).click()
+  }
 
-    clickByText("Add new")
-    clickByRes("action_button")
+  private fun MacrobenchmarkScope.addHypertensionRecord() {
+    device.waitForObject(By.res(packageName, "addStageButton")).click()
+    device.waitForObject(By.text("Add new")).click()
+    device.waitForObject(By.res(packageName, "action_button")).click()
 
-    waitForRes("sectionName")
+    device.waitForObject(By.res(packageName, "sectionName"))
 
     val elements = device.findObjects(By.res(packageName, "input_editText"))
     elements[0].click()
@@ -88,27 +89,8 @@ class BPEntryBenchmark {
     device.pressKeyCode(KeyEvent.KEYCODE_4)
     device.pressBack()
 
-    val dropDownElement = device.findObjects(By.res(packageName, "inputEditText"))
-    dropDownElement[0].click()
-    clickByText("Amlodipine(5mg)")
-
-    val scrollableView = UiScrollable(UiSelector().scrollable(true))
-    scrollableView.scrollToEnd(1)
-
-    device.waitForIdle()
-    clickByRes("actionButton")
-  }
-
-  private fun MacrobenchmarkScope.markFormAsComplete() {
-    clickByTag("MAIN_BUTTON_TAG")
-  }
-
-  private fun MacrobenchmarkScope.generateNewEvent(generate: Boolean) {
-    if (generate) {
-      clickByRes("possitive")
-    } else {
-      clickByRes("negative")
-    }
-    device.waitForIdle()
+    device.waitForObject(By.res(packageName, "inputEditText")).click()
+    device.waitForObject(By.text("Amlodipine(5mg)")).click()
+    device.waitForObject(By.res(packageName, "actionButton")).click()
   }
 }

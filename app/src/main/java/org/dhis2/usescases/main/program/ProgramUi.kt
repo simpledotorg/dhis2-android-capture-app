@@ -160,6 +160,7 @@ fun ProgramList(
     }
 }
 
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun ProgramItem(
     modifier: Modifier = Modifier,
@@ -174,8 +175,9 @@ fun ProgramItem(
                 onItemClick(programViewModel)
             }
             .background(color = Color.White)
-            .padding(horizontal = 16.dp, vertical = 8.dp),
-        verticalAlignment = Alignment.CenterVertically,
+            .padding(horizontal = 16.dp, vertical = 8.dp)
+            .semantics { testTagsAsResourceId = true },
+        verticalAlignment = Alignment.CenterVertically
     ) {
         Box(
             contentAlignment = Alignment.BottomEnd,
@@ -270,7 +272,8 @@ fun DownloadingProgress() {
     CircularProgressIndicator(
         modifier = Modifier
             .size(24.dp)
-            .padding(2.dp),
+            .padding(2.dp)
+            .testTag("DOWNLOADING_PROGRAM"),
         color = Color(
             ColorUtils().getPrimaryColor(LocalContext.current, ColorType.PRIMARY),
         ),
