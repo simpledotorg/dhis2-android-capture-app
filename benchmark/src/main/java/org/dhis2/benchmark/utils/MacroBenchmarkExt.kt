@@ -103,3 +103,16 @@ fun MacrobenchmarkScope.waitForRes(
         TestCase.fail("Could not find: $resource")
     }
 }
+
+fun MacrobenchmarkScope.waitForTag(
+    tag: String,
+    timeoutSeconds: Long = 10
+) {
+    if (!device.wait(
+            Until.hasObject(By.res(tag)),
+            TimeUnit.SECONDS.toMillis(timeoutSeconds)
+        )
+    ) {
+        TestCase.fail("Could not find: $tag")
+    }
+}
