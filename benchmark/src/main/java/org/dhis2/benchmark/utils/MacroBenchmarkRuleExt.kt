@@ -5,11 +5,13 @@ import androidx.benchmark.macro.MacrobenchmarkScope
 import androidx.benchmark.macro.Metric
 import androidx.benchmark.macro.StartupMode
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
-import org.dhis2.benchmark.DEFAULT_ITERATIONS
-import org.dhis2.benchmark.TARGET_PACKAGE
+
+private const val TARGET_PACKAGE = "com.dhis2"
+private const val DEFAULT_ITERATIONS = 11
 
 fun MacrobenchmarkRule.measureRepeated(
   metrics: List<Metric>,
+  iterations: Int = DEFAULT_ITERATIONS,
   setupBlock: MacrobenchmarkScope.() -> Unit = {},
   measureBlock: MacrobenchmarkScope.() -> Unit = {}
 ) {
@@ -18,9 +20,8 @@ fun MacrobenchmarkRule.measureRepeated(
     metrics = metrics,
     compilationMode = CompilationMode.DEFAULT,
     startupMode = StartupMode.COLD,
-    iterations = DEFAULT_ITERATIONS,
+    iterations = iterations,
     setupBlock = setupBlock,
-  ) {
-    measureBlock()
-  }
+    measureBlock = measureBlock
+  )
 }
