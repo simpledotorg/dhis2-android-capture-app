@@ -36,7 +36,8 @@ class PatientFlowBenchmark {
 
         if (firstStart) {
           login()
-          device.wait(Until.gone(By.res( "DOWNLOADING_PROGRAM")), 60.seconds)
+          device.waitForObject(By.text("Home"))
+          device.wait(Until.gone(By.res("DOWNLOADING_PROGRAM")), 60.seconds)
           firstStart = false
         }
       },
@@ -65,6 +66,8 @@ class PatientFlowBenchmark {
         if (firstStart) {
           login()
 
+          device.waitForObject(By.text("Home"))
+          device.wait(Until.gone(By.res("DOWNLOADING_PROGRAM")), 60.seconds)
           device.waitForObject(By.text(HTN_PROGRAM)).click()
 
           searchTEI()

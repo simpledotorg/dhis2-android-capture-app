@@ -7,15 +7,18 @@ import androidx.benchmark.macro.TraceSectionMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.uiautomator.By
+import androidx.test.uiautomator.Until
 import org.dhis2.benchmark.HTN_PROGRAM
 import org.dhis2.benchmark.flows.login
 import org.dhis2.benchmark.flows.createTEI
 import org.dhis2.benchmark.flows.searchTEI
 import org.dhis2.benchmark.utils.measureRepeated
+import org.dhis2.benchmark.utils.wait
 import org.dhis2.benchmark.utils.waitForObject
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import kotlin.time.Duration.Companion.seconds
 
 @RunWith(AndroidJUnit4::class)
 class BPEntryBenchmark {
@@ -37,6 +40,8 @@ class BPEntryBenchmark {
         if (firstStart) {
           login()
 
+          device.waitForObject(By.text("Home"))
+          device.wait(Until.gone(By.res("DOWNLOADING_PROGRAM")), 60.seconds)
           device.waitForObject(By.text(HTN_PROGRAM)).click()
 
           searchTEI()
