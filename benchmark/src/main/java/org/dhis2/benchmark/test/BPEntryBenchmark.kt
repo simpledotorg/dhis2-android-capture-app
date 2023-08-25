@@ -7,6 +7,8 @@ import androidx.benchmark.macro.TraceSectionMetric
 import androidx.benchmark.macro.junit4.MacrobenchmarkRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.uiautomator.By
+import androidx.test.uiautomator.UiScrollable
+import androidx.test.uiautomator.UiSelector
 import androidx.test.uiautomator.Until
 import org.dhis2.benchmark.HTN_PROGRAM
 import org.dhis2.benchmark.flows.login
@@ -96,6 +98,10 @@ class BPEntryBenchmark {
 
     device.waitForObject(By.res(packageName, "inputEditText")).click()
     device.waitForObject(By.text("Amlodipine(5mg)")).click()
+
+    val scrollableView = UiScrollable(UiSelector().scrollable(true))
+    scrollableView.scrollToEnd(1)
+
     device.waitForObject(By.res(packageName, "actionButton")).click()
   }
 }
