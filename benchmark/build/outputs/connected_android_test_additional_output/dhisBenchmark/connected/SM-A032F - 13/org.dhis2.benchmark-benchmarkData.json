@@ -1,0 +1,50 @@
+{
+    "context": {
+        "build": {
+            "brand": "samsung",
+            "device": "a3core",
+            "fingerprint": "samsung/a3corexx/a3core:13/TP1A.220624.014/A032FXXU4CWI8:user/release-keys",
+            "model": "SM-A032F",
+            "version": {
+                "sdk": 33
+            }
+        },
+        "cpuCoreCount": 8,
+        "cpuLocked": false,
+        "cpuMaxFreqHz": 1600000000,
+        "memTotalBytes": 1936351232,
+        "sustainedPerformanceModeEnabled": false
+    },
+    "benchmarks": [
+        {
+            "name": "addNewBloodPressure",
+            "params": {},
+            "className": "org.dhis2.benchmark.test.BPEntryBenchmark",
+            "totalRunTimeNs": 2234629602978,
+            "metrics": {
+                "BP_ENTRY_FLOW_Ms": {
+                    "minimum": 22744.654522,
+                    "maximum": 24902.049021,
+                    "median": 24323.491328,
+                    "runs": [
+                        22744.654522,
+                        24347.301521,
+                        24498.142252,
+                        24597.395483,
+                        24057.903252,
+                        24902.049021,
+                        23979.116252,
+                        24774.477636,
+                        24323.491328,
+                        23387.776021,
+                        24079.647329
+                    ]
+                }
+            },
+            "sampledMetrics": {},
+            "warmupIterations": 0,
+            "repeatIterations": 11,
+            "thermalThrottleSleepSeconds": 0
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="org.dhis2.benchmark.test.BPEntryBenchmark" tests="1" failures="0" errors="0" skipped="0" time="2281.665" timestamp="2023-11-16T13:29:44" hostname="localhost">
+  <properties>
+    <property name="device" value="SM-A032F - 13" />
+    <property name="flavor" value="dhis" />
+    <property name="project" value=":benchmark" />
+  </properties>
+  <testcase name="addNewBloodPressure" classname="org.dhis2.benchmark.test.BPEntryBenchmark" time="2258.405" />
+</testsuite>

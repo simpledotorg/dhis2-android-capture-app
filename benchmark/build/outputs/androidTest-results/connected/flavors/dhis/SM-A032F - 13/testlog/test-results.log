@@ -1,0 +1,58 @@
+INSTRUMENTATION_STATUS: class=org.dhis2.benchmark.test.BPEntryBenchmark
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+org.dhis2.benchmark.test.BPEntryBenchmark:
+INSTRUMENTATION_STATUS: test=addNewBloodPressure
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_000=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_001=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_002=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_003=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_004=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_005=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_006=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_007=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_008=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_009=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: additionalTestOutputFile_perfetto_trace_010=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: BP_ENTRY_FLOW_Ms_median=24323.491328
+INSTRUMENTATION_STATUS: BP_ENTRY_FLOW_Ms_min=22744.654522
+INSTRUMENTATION_STATUS: BP_ENTRY_FLOW_Ms_stddev=628.0443279612055
+INSTRUMENTATION_STATUS: android.studio.display.benchmark=BPEntryBenchmark_addNewBloodPressure
+BP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0
+
+INSTRUMENTATION_STATUS: android.studio.v2display.benchmark=BPEntryBenchmark_addNewBloodPressure
+BP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)
+Traces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)
+
+INSTRUMENTATION_STATUS: android.studio.v2display.benchmark.outputDirPath=/sdcard/Android/media/org.dhis2.benchmark/additional_test_output
+INSTRUMENTATION_STATUS_CODE: 2
+INSTRUMENTATION_STATUS: class=org.dhis2.benchmark.test.BPEntryBenchmark
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=addNewBloodPressure
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 2,235.895
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+

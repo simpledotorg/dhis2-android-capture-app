@@ -1,0 +1,1264 @@
+# 2023-11-16T13:29:44.814Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 1
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "BPEntryBenchmark"
+    test_package: "org.dhis2.benchmark.test"
+    test_method: "addNewBloodPressure"
+    start_time {
+      seconds: 1700139103
+      nanos: 63000000
+    }
+    end_time {
+      seconds: 1700141338
+      nanos: 970000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.message"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/additionaltestoutput.benchmark.message.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "additionaltestoutput.benchmark.trace"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/connected_android_test_additional_output/dhisBenchmark/connected/SM-A032F - 13/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+    }
+  }
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/androidTest-results/connected/flavors/dhis/SM-A032F - 13/logcat-org.dhis2.benchmark.test.BPEntryBenchmark-addNewBloodPressure.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/androidTest-results/connected/flavors/dhis/SM-A032F - 13/device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/androidTest-results/connected/flavors/dhis/SM-A032F - 13/meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/androidTest-results/connected/flavors/dhis/SM-A032F - 13/cpuinfo"
+    }
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_000"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_001"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_002"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_003"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_004"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_005"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_006"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_007"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_008"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_009"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace"
+  }
+  details {
+    key: "additionalTestOutputFile_perfetto_trace_010"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output/BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_median"
+    value: "24323.491328"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_min"
+    value: "22744.654522"
+  }
+  details {
+    key: "BP_ENTRY_FLOW_Ms_stddev"
+    value: "628.0443279612055"
+  }
+  details {
+    key: "android.studio.display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   min 22,744.7,   median 24,323.5,   max 24,902.0"
+  }
+  details {
+    key: "android.studio.v2display.benchmark"
+    value: "BPEntryBenchmark_addNewBloodPressure\nBP_ENTRY_FLOW_Ms   [min 22,744.7](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace),   [median 24,323.5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace),   [max 24,902.0](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace)\nTraces: Iteration [0](file://BPEntryBenchmark_addNewBloodPressure_iter000_2023-11-16-13-07-30.perfetto-trace) [1](file://BPEntryBenchmark_addNewBloodPressure_iter001_2023-11-16-13-09-32.perfetto-trace) [2](file://BPEntryBenchmark_addNewBloodPressure_iter002_2023-11-16-13-11-37.perfetto-trace) [3](file://BPEntryBenchmark_addNewBloodPressure_iter003_2023-11-16-13-13-44.perfetto-trace) [4](file://BPEntryBenchmark_addNewBloodPressure_iter004_2023-11-16-13-15-50.perfetto-trace) [5](file://BPEntryBenchmark_addNewBloodPressure_iter005_2023-11-16-13-17-57.perfetto-trace) [6](file://BPEntryBenchmark_addNewBloodPressure_iter006_2023-11-16-13-20-02.perfetto-trace) [7](file://BPEntryBenchmark_addNewBloodPressure_iter007_2023-11-16-13-22-10.perfetto-trace) [8](file://BPEntryBenchmark_addNewBloodPressure_iter008_2023-11-16-13-24-18.perfetto-trace) [9](file://BPEntryBenchmark_addNewBloodPressure_iter009_2023-11-16-13-26-22.perfetto-trace) [10](file://BPEntryBenchmark_addNewBloodPressure_iter010_2023-11-16-13-28-30.perfetto-trace)"
+  }
+  details {
+    key: "android.studio.v2display.benchmark.outputDirPath"
+    value: "/sdcard/Android/media/org.dhis2.benchmark/additional_test_output"
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "/Users/siddharthagarwal/Documents/code/benchmark/dhis2-android-capture-app/benchmark/build/outputs/androidTest-results/connected/flavors/dhis/SM-A032F - 13/testlog/test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}
