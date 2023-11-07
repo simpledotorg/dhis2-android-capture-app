@@ -137,6 +137,7 @@ android {
             buildConfigField("String", "BUILD_DATE", "\"" + getBuildDate() + "\"")
             buildConfigField("String", "GIT_SHA", "\"" + getCommitHash() + "\"")
         }
+
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
@@ -147,6 +148,18 @@ android {
             buildConfigField("String", "BUILD_DATE", "\"" + getBuildDate() + "\"")
             buildConfigField("String", "GIT_SHA", "\"" + getCommitHash() + "\"")
         }
+
+        create("benchmark") {
+            initWith(buildTypes.getByName("release"))
+            signingConfig = signingConfigs.getByName("debug")
+            matchingFallbacks += listOf("release")
+            isDebuggable = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android.txt"),
+                "proguard-rules.pro"
+            )
+        }
+
     }
     flavorDimensions += listOf("default")
 
@@ -256,6 +269,9 @@ dependencies {
     implementation(libs.analytics.customactivityoncrash)
     implementation(platform(libs.dispatcher.dispatchBOM))
     implementation(libs.dispatcher.dispatchCore)
+    implementation(libs.dhis2.mobile.designsystem)
+    implementation(libs.androidx.profileInstaller)
+    implementation(libs.androidx.tracing)
 
     coreLibraryDesugaring(libs.desugar)
 
