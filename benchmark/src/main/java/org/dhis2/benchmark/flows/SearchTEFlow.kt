@@ -13,7 +13,7 @@ fun MacrobenchmarkScope.searchTEI() {
 private fun MacrobenchmarkScope.searchPatientByFirstAndLastName() {
   val elements = device.findObjects(By.res(packageName, "input_editText"))
 
-  elements[0].click()
+  elements[1].click()
   device.pressKeyCode(KeyEvent.KEYCODE_R)
   device.pressKeyCode(KeyEvent.KEYCODE_A)
   device.pressKeyCode(KeyEvent.KEYCODE_J)
@@ -21,7 +21,7 @@ private fun MacrobenchmarkScope.searchPatientByFirstAndLastName() {
   device.pressKeyCode(KeyEvent.KEYCODE_S)
   device.pressKeyCode(KeyEvent.KEYCODE_H)
 
-  elements[1].click()
+  elements[2].click()
   device.pressKeyCode(KeyEvent.KEYCODE_K)
   device.pressKeyCode(KeyEvent.KEYCODE_U)
   device.pressKeyCode(KeyEvent.KEYCODE_M)

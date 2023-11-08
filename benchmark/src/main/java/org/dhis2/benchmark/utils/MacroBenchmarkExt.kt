@@ -36,7 +36,7 @@ fun MacrobenchmarkRule.measureRepeated(
     )
 }
 
-fun UiDevice.waitForObject(selector: BySelector, timeout: Duration = 60.seconds): UiObject2 {
+fun UiDevice.waitForObject(selector: BySelector, timeout: Duration = 360.seconds): UiObject2 {
     if (wait(Until.hasObject(selector), timeout)) {
         return findObject(selector)
     }

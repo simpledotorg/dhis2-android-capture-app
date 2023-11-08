@@ -36,8 +36,9 @@ class PatientFlowBenchmark {
 
         if (firstStart) {
           login()
+          device.waitForObject(By.text("Allow")).click()
           device.waitForObject(By.text("Home"))
-          device.wait(Until.gone(By.res("DOWNLOADING_PROGRAM")), 60.seconds)
+          device.wait(Until.gone(By.res("DOWNLOADING_PROGRAM")), 360.seconds)
           firstStart = false
         }
       },
