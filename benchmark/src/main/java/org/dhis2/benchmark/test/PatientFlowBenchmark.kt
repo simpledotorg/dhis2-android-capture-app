@@ -7,9 +7,11 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.uiautomator.By
 import androidx.test.uiautomator.Until
 import org.dhis2.benchmark.HTN_PROGRAM
+import org.dhis2.benchmark.flows.allowNotificationsPermission
 import org.dhis2.benchmark.flows.createTEI
 import org.dhis2.benchmark.flows.login
 import org.dhis2.benchmark.flows.searchTEI
+import org.dhis2.benchmark.flows.waitForSyncToFinish
 import org.dhis2.benchmark.utils.measureRepeated
 import org.dhis2.benchmark.utils.wait
 import org.dhis2.benchmark.utils.waitForObject
@@ -21,74 +23,70 @@ import kotlin.time.Duration.Companion.seconds
 @RunWith(AndroidJUnit4::class)
 class PatientFlowBenchmark {
 
-  @get:Rule
-  val benchmarkRule = MacrobenchmarkRule()
+    @get:Rule
+    val benchmarkRule = MacrobenchmarkRule()
 
-  @OptIn(ExperimentalMetricApi::class)
-  @Test
-  fun patientRegistration() {
-    var firstStart = true
-    benchmarkRule.measureRepeated(
-      metrics = listOf(TraceSectionMetric("PATIENT_REGISTRATION_FLOW_")),
-      setupBlock = {
-        pressHome()
-        startActivityAndWait()
+    @OptIn(ExperimentalMetricApi::class)
+    @Test
+    fun patientRegistration() {
+        var firstStart = true
+        benchmarkRule.measureRepeated(
+            metrics = listOf(TraceSectionMetric("PATIENT_REGISTRATION_FLOW_")),
+            setupBlock = {
+                pressHome()
+                startActivityAndWait()
 
-        if (firstStart) {
-          login()
-          device.waitForObject(By.text("Allow")).click()
-          device.waitForObject(By.text("Home"))
-          device.wait(Until.gone(By.res("DOWNLOADING_PROGRAM")), 360.seconds)
-          firstStart = false
-        }
-      },
-      measureBlock = {
-        device.waitForObject(By.text(HTN_PROGRAM)).click()
+                if (firstStart) {
+                    login()
+                    allowNotificationsPermission()
+                    waitForSyncToFinish()
+                    firstStart = false
+                }
+            },
+            measureBlock = {
+                device.waitForObject(By.text(HTN_PROGRAM)).click()
+                searchTEI()
+                createTEI()
+                device.waitForObject(By.res(packageName, "tei_pager"))
+                device.waitForIdle()
+            }
+        )
+    }
 
-        searchTEI()
-        createTEI()
+    @OptIn(ExperimentalMetricApi::class)
+    @Test
+    fun patientSearch() {
+        var firstStart = true
+        benchmarkRule.measureRepeated(
+            metrics = listOf(TraceSectionMetric("PATIENT_SEARCH_FLOW_")),
+            setupBlock = {
+                pressHome()
+                startActivityAndWait()
 
-        device.waitForObject(By.res(packageName, "tei_pager"))
-        device.waitForIdle()
-      }
-    )
-  }
+                if (firstStart) {
+                    login()
+                    allowNotificationsPermission()
+                    waitForSyncToFinish()
+                    device.waitForObject(By.text(HTN_PROGRAM)).click()
 
-  @OptIn(ExperimentalMetricApi::class)
-  @Test
-  fun patientSearch() {
-    var firstStart = true
-    benchmarkRule.measureRepeated(
-      metrics = listOf(TraceSectionMetric("PATIENT_SEARCH_FLOW_")),
-      setupBlock = {
-        pressHome()
-        startActivityAndWait()
+                    searchTEI()
+                    createTEI()
 
-        if (firstStart) {
-          login()
+                    device.waitForObject(By.res(packageName, "back")).click()
+                    device.waitForObject(By.res(packageName, "back_button")).click()
 
-          device.waitForObject(By.text("Home"))
-          device.wait(Until.gone(By.res("DOWNLOADING_PROGRAM")), 60.seconds)
-          device.waitForObject(By.text(HTN_PROGRAM)).click()
+                    firstStart = false
+                }
+            },
+            measureBlock = {
+                device.waitForObject(By.text(HTN_PROGRAM)).click()
 
-          searchTEI()
-          createTEI()
+                searchTEI()
 
-          device.waitForObject(By.res(packageName, "back")).click()
-          device.waitForObject(By.res(packageName, "back_button")).click()
-
-          firstStart = false
-        }
-      },
-      measureBlock = {
-        device.waitForObject(By.text(HTN_PROGRAM)).click()
-
-        searchTEI()
-
-        device.waitForObject(By.text("rajesh")).click()
-        device.waitForObject(By.res(packageName, "tei_pager"))
-        device.waitForIdle()
-      }
-    )
-  }
+                device.waitForObject(By.text("rajesh")).click()
+                device.waitForObject(By.res(packageName, "tei_pager"))
+                device.waitForIdle()
+            }
+        )
+    }
 }

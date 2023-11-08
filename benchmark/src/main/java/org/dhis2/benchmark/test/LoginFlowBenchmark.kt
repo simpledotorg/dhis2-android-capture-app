@@ -19,23 +19,23 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class LoginFlowBenchmark {
 
-  @get:Rule
-  val benchmarkRule = MacrobenchmarkRule()
+    @get:Rule
+    val benchmarkRule = MacrobenchmarkRule()
 
-  private val instrumentation by lazy(LazyThreadSafetyMode.NONE) {
-    InstrumentationRegistry.getInstrumentation()
-  }
-
-  @Test
-  fun login() = benchmarkRule.measureRepeated(
-    metrics = listOf(TraceSectionMetric("LOGIN_FLOW_")),
-    setupBlock = {
-      pressHome()
-      instrumentation.clearData(packageName)
+    private val instrumentation by lazy(LazyThreadSafetyMode.NONE) {
+        InstrumentationRegistry.getInstrumentation()
     }
-  ) {
-    startActivityAndWait(Intent("$packageName.LOGIN_ACTIVITY"))
-    login()
-    device.waitForObject(By.res(packageName, "sync_layout"))
-  }
+
+    @Test
+    fun login() = benchmarkRule.measureRepeated(
+        metrics = listOf(TraceSectionMetric("LOGIN_FLOW_")),
+        setupBlock = {
+            pressHome()
+            instrumentation.clearData(packageName)
+        }
+    ) {
+        startActivityAndWait(Intent("$packageName.LOGIN_ACTIVITY"))
+        login()
+        device.waitForObject(By.res(packageName, "sync_layout"))
+    }
 }
