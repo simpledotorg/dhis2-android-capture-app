@@ -135,8 +135,11 @@ private fun MacrobenchmarkScope.addDiagnosis() {
 }
 
 private fun MacrobenchmarkScope.addConsentAndStatus() {
-    val radioGroupsWithRes = device.findObjects(By.res(packageName, "radio"))
-    radioGroupsWithRes[0].click()
+    val consent = device.findObject(By.text("Yes, patient gives consent"))
+    consent.click()
+
+    val patientStatus = device.findObject(By.text("Active record"))
+    patientStatus.click()
 }
 
 fun MacrobenchmarkScope.addHypertensionRecord() {
