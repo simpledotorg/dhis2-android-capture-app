@@ -130,16 +130,14 @@ private fun MacrobenchmarkScope.fillDOB() {
 
 private fun MacrobenchmarkScope.addDiagnosis() {
     val radioGroupsWithText = device.findObjects(By.text("Yes"))
-    radioGroupsWithText[0].click()
-    radioGroupsWithText[2].click()
+    radioGroupsWithText.forEach { radioButton ->
+        radioButton.click()
+    }
 }
 
 private fun MacrobenchmarkScope.addConsentAndStatus() {
-    val consent = device.findObject(By.text("Yes, patient gives consent"))
-    consent.click()
-
-    val patientStatus = device.findObject(By.text("Active record"))
-    patientStatus.click()
+    device.waitForObject(By.text("Yes, patient gives consent")).click()
+    device.waitForObject(By.text("Active record")).click()
 }
 
 fun MacrobenchmarkScope.addHypertensionRecord() {
