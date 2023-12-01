@@ -3,6 +3,7 @@ package org.dhis2.benchmark.flows
 import android.view.KeyEvent
 import androidx.benchmark.macro.MacrobenchmarkScope
 import androidx.test.uiautomator.By
+import androidx.test.uiautomator.Direction
 import androidx.test.uiautomator.UiScrollable
 import androidx.test.uiautomator.UiSelector
 import org.dhis2.benchmark.utils.waitForObject
@@ -14,16 +15,7 @@ fun MacrobenchmarkScope.createTEI() {
     //Select today's date
     device.waitForObject(By.res(packageName, "acceptBtn")).click()
 
-    device.waitForObject(By.res(packageName, "sectionButton")).click()
-
     addPatientDetails()
-
-    device.waitForObject(By.res(packageName, "sectionButton")).click()
-
-    addDiagnosis()
-
-    device.waitForObject(By.res(packageName, "sectionButton")).click()
-    device.waitForObject(By.res(packageName, "sectionButton")).click()
 
     addConsentAndStatus()
 
@@ -67,8 +59,7 @@ private fun MacrobenchmarkScope.addPatientDetails() {
     device.waitForObject(By.text("Male")).click()
 
     //Enter House address
-    val elements = device.findObjects(By.res(packageName, "input_editText"))
-    elements[4].click()
+    device.waitForObject(By.text("House address *")).click()
     device.pressKeyCode(KeyEvent.KEYCODE_A)
     device.pressKeyCode(KeyEvent.KEYCODE_2)
     device.pressKeyCode(KeyEvent.KEYCODE_0)
@@ -83,12 +74,12 @@ private fun MacrobenchmarkScope.addPatientDetails() {
     device.pressBack()
 
     val scrollableView = UiScrollable(UiSelector().scrollable(true))
-    scrollableView.scrollIntoView(UiSelector().text("Next"))
-
-    val dropDownElements = device.findObjects(By.res(packageName, "inputEditText"))
+    scrollableView.scrollForward(80)
 
     //Select District
-    dropDownElements[0].click()
+    val inputDropDowns = device.findObjects(By.res("INPUT_DROPDOWN"))
+
+    inputDropDowns[0].click()
     device.waitForObject(By.text("Search")).click()
     device.pressKeyCode(KeyEvent.KEYCODE_B)
     device.pressKeyCode(KeyEvent.KEYCODE_E)
@@ -103,7 +94,7 @@ private fun MacrobenchmarkScope.addPatientDetails() {
     device.waitForObject(By.text("Bengaluru Urban")).click()
 
     //Select State
-    dropDownElements[1].click()
+    inputDropDowns[1].click()
     device.waitForObject(By.text("Search")).click()
     device.pressKeyCode(KeyEvent.KEYCODE_K)
     device.pressKeyCode(KeyEvent.KEYCODE_A)
@@ -119,16 +110,26 @@ private fun MacrobenchmarkScope.addPatientDetails() {
 }
 
 private fun MacrobenchmarkScope.fillDOB() {
-    device.waitForObject(By.res(packageName, "input_year")).click()
-    device.waitForObject(By.res(packageName, "input_year")).click()
+    val scrollableView = UiScrollable(UiSelector().scrollable(true))
+    scrollableView.scrollForward(80)
 
-    device.pressKeyCode(KeyEvent.KEYCODE_3)
+    device.waitForObject(By.text("DATE OF BIRTH")).click()
+
+    device.pressKeyCode(KeyEvent.KEYCODE_1)
+    device.pressKeyCode(KeyEvent.KEYCODE_1)
+    device.pressKeyCode(KeyEvent.KEYCODE_0)
+    device.pressKeyCode(KeyEvent.KEYCODE_8)
+    device.pressKeyCode(KeyEvent.KEYCODE_1)
+    device.pressKeyCode(KeyEvent.KEYCODE_9)
     device.pressKeyCode(KeyEvent.KEYCODE_6)
-
-    device.waitForObject(By.text("Accept")).click()
+    device.pressKeyCode(KeyEvent.KEYCODE_4)
+    device.pressBack()
 }
 
 private fun MacrobenchmarkScope.addDiagnosis() {
+    val scrollableView = UiScrollable(UiSelector().scrollable(true))
+    scrollableView.scrollIntoView(UiSelector().text("Does patient have hypertension? *"))
+
     val radioGroupsWithText = device.findObjects(By.text("Yes"))
     radioGroupsWithText.forEach { radioButton ->
         radioButton.click()
@@ -136,25 +137,33 @@ private fun MacrobenchmarkScope.addDiagnosis() {
 }
 
 private fun MacrobenchmarkScope.addConsentAndStatus() {
-    device.waitForObject(By.text("Yes, patient gives consent")).click()
-    device.waitForObject(By.text("Active record")).click()
+    device.findObject(By.scrollable(true))
+        .scroll(Direction.DOWN, 100f)
+
+    val scrollableView = UiScrollable(UiSelector().scrollable(true))
+    scrollableView.scrollForward(80)
+
+    device.waitForObject(By.text("By tapping the checkbox you confirm that any patient data you enter has been obtained under appropriate informed consent. This means that the patient or legal guardian knows that you are entering their personal data into the app, understands what data is being collected, and knows that they may be contacted via SMS, WhatsApp or other methods using the phone number provided in the app.   Anyone authorized by you, or the healthcare provider for whom you work, will have access to the patient data and information you enter here. By using the app you confirm that the patient understands who will have access to the data obtained through this app and consents to that access."))
+        .click()
 }
 
 fun MacrobenchmarkScope.addHypertensionRecord() {
     device.waitForObject(By.text("Hypertension record"))
-    val elements = device.findObjects(By.res(packageName, "input_editText"))
+    val elements = device.findObjects(By.res("INPUT_POSITIVE_INTEGER"))
     elements[0].click()
     device.pressKeyCode(KeyEvent.KEYCODE_1)
-    device.pressKeyCode(KeyEvent.KEYCODE_3)
-    device.pressKeyCode(KeyEvent.KEYCODE_6)
+    device.pressKeyCode(KeyEvent.KEYCODE_4)
+    device.pressKeyCode(KeyEvent.KEYCODE_8)
     device.pressBack()
 
     elements[1].click()
-    device.pressKeyCode(KeyEvent.KEYCODE_8)
-    device.pressKeyCode(KeyEvent.KEYCODE_4)
+    device.pressKeyCode(KeyEvent.KEYCODE_9)
+    device.pressKeyCode(KeyEvent.KEYCODE_7)
     device.pressBack()
 
-    device.waitForObject(By.res(packageName, "inputEditText")).click()
+    val dropDownElements = device.findObjects(By.res("INPUT_DROPDOWN"))
+    dropDownElements[0].click()
+
     device.waitForObject(By.text("Amlodipine 5mg OD")).click()
 }
 
