@@ -80,7 +80,7 @@ class PatientFlowBenchmark {
 
                 searchTEI()
 
-                device.waitForObject(By.text("rajesh")).click()
+                device.waitForObject(By.text("First Name: rajesh")).click()
                 device.waitForObject(By.res(packageName, "tei_pager"))
                 device.waitForIdle()
             }
