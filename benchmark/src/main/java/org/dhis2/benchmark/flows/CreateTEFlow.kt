@@ -73,8 +73,10 @@ private fun MacrobenchmarkScope.addPatientDetails() {
     device.pressKeyCode(KeyEvent.KEYCODE_R)
     device.pressBack()
 
+//    val scrollableView = UiScrollable(UiSelector().scrollable(true))
+//    scrollableView.scrollTextIntoView("State *")
     val scrollableView = UiScrollable(UiSelector().scrollable(true))
-    scrollableView.scrollForward(80)
+    scrollableView.scrollForward(120)
 
     //Select District
     val inputDropDowns = device.findObjects(By.res("INPUT_DROPDOWN"))
@@ -111,7 +113,7 @@ private fun MacrobenchmarkScope.addPatientDetails() {
 
 private fun MacrobenchmarkScope.fillDOB() {
     val scrollableView = UiScrollable(UiSelector().scrollable(true))
-    scrollableView.scrollForward(80)
+    scrollableView.scrollTextIntoView("DATE OF BIRTH")
 
     device.waitForObject(By.text("DATE OF BIRTH")).click()
 
