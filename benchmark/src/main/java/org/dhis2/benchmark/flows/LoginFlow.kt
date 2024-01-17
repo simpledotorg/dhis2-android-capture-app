@@ -5,8 +5,8 @@ import androidx.test.uiautomator.By
 import org.dhis2.benchmark.utils.waitForObject
 
 private const val SERVER_URL = "https://dhis2-sandbox2.simple.org"
-private const val USERNAME = "admin"
-private const val PASSWORD = "district"
+private const val USERNAME = "bolanurse"
+private const val PASSWORD = "Test123!"
 
 fun MacrobenchmarkScope.login() {
   device.waitForObject(By.res(packageName, "server_url_edit")).text = SERVER_URL

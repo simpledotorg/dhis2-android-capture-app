@@ -10,7 +10,7 @@ import org.dhis2.benchmark.utils.waitForObject
 
 fun MacrobenchmarkScope.createTEI() {
     device.waitForObject(By.res(packageName, "createButton")).click()
-    selectOrgUnit()
+//    selectOrgUnit()
 
     //Select today's date
     device.waitForObject(By.res(packageName, "acceptBtn")).click()

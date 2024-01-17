@@ -57,7 +57,7 @@ class BPEntryBenchmark {
 
                 searchTEI()
 
-                device.waitForObject(By.text("First Name: rajesh")).click()
+                device.waitForObject(By.text("rajesh kumar, MALE, 1964-08-11")).click()
 
                 addEvent()
                 markFormAsCompleted()
