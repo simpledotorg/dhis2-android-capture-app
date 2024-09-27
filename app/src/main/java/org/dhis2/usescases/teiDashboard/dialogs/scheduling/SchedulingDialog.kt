@@ -13,6 +13,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.viewModels
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.gson.Gson
 import org.dhis2.bindings.app
 import org.dhis2.commons.data.EventCreationType
 import org.dhis2.commons.dialogs.PeriodDialog
@@ -36,6 +37,8 @@ class SchedulingDialog : BottomSheetDialogFragment() {
         const val PROGRAM_STAGE_UID = "PROGRAM_STAGE_UID"
         const val EVENT_UID = "EVENT_UID"
 
+        private const val TAG_LAUNCH_MODE = "SCHEDULING_DIALOG_LAUNCH_MODE"
+
         fun newSchedule(
             enrollment: Enrollment,
             programStages: List<ProgramStage>,
@@ -43,12 +46,13 @@ class SchedulingDialog : BottomSheetDialogFragment() {
             eventCreationType: EventCreationType,
         ): SchedulingDialog {
             return SchedulingDialog().apply {
-                this.launchMode = LaunchMode.NewSchedule(
+                val launchMode = LaunchMode.NewSchedule(
                     enrollment = enrollment,
                     programStages = programStages,
                     showYesNoOptions = showYesNoOptions,
                     eventCreationType = eventCreationType,
                 )
+                putLaunchModeArguments(launchMode)
             }
         }
 
@@ -57,15 +61,24 @@ class SchedulingDialog : BottomSheetDialogFragment() {
             showYesNoOptions: Boolean,
             eventCreationType: EventCreationType,
         ) = SchedulingDialog().apply {
-            this.launchMode = LaunchMode.EnterEvent(
+            val launchMode = LaunchMode.EnterEvent(
                 eventUid = eventUid,
                 showYesNoOptions = showYesNoOptions,
                 eventCreationType = eventCreationType,
             )
+            putLaunchModeArguments(launchMode)
+        }
+
+        private fun SchedulingDialog.putLaunchModeArguments(launchMode: LaunchMode) {
+            val launchModeString = Gson().toJson(launchMode)
+            arguments?.putString(TAG_LAUNCH_MODE, launchModeString)
         }
     }
 
-    lateinit var launchMode: LaunchMode
+    private val launchMode: LaunchMode by lazy {
+        val launchModeString = arguments?.getString(TAG_LAUNCH_MODE)!!
+        Gson().fromJson(launchModeString, LaunchMode::class.java)
+    }
 
     @Inject
     lateinit var factory: SchedulingViewModelFactory.Factory
